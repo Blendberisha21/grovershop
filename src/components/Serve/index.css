@@ -1,0 +1,151 @@
+.serve{
+    background: #FEF5F5;
+}
+
+.serve > p{
+    color: #F54748;
+text-align: center;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 133.333% */
+letter-spacing: 0.5px;
+margin-top:4em;
+padding-top:1em
+}
+
+.serve > h1{
+    color: #2E2E2E;
+text-align: center;
+font-size: 43px;
+font-style: normal;
+font-weight: 700;
+line-height: 54px; /* 135% */
+text-transform: capitalize;
+letter-spacing: 1.5px;
+
+}
+
+.boxes{
+    display:flex;
+    justify-content:center;
+
+
+}
+
+.box{
+    border-radius: 12px;
+    background: #FFF;
+    width: 340px;
+height: 330px;
+flex-shrink: 0;
+margin-bottom:10em
+}
+
+.box > svg{
+   margin:3em 4em -2.5em 6.3em 
+}
+
+.box > h3{
+    color: #2E2E2E;
+text-align: center;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -0.22px;
+}
+
+.box > p{
+    color: #676767;
+text-align: center;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; 
+margin-top:1.5em
+}
+
+.boxes div:nth-child(3) {
+    margin-left:3em
+}
+
+
+
+  
+  .box-container {
+    width: 350.002px;
+    height: 354.163px;
+    transform: rotate(-7deg);
+    transform-origin: center; /* Set the pivot point to the center of the container */
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FE6A6A;
+    margin-left:3em;
+}
+
+.box-container > .box {
+    transform: rotate(7deg); /* Reset the rotation for the child elements */
+}
+
+
+@media (max-width:1150px){
+    .boxes{
+        display:block;
+        justify-content:center;
+        align-content:center;
+        
+
+    }
+    .boxes div:nth-child(3) {
+        margin:2em auto
+    }
+    .box{
+        justify-content:center;
+        align-content:center;
+        margin:2em auto;
+        width:25em;
+        height:25em;
+    }
+    .box-container {
+        margin:5em auto;
+        width:25em;
+        height:25em
+    }
+    
+
+    .box > svg{
+        margin:3em 4em -2.5em 8em 
+     }
+     .serve{
+        height:1700px
+     }
+     
+}
+
+@media (max-width:500px){
+    .serve{
+        height:1400px
+     }
+    .box{
+        width:18em;
+        height:19em;
+    }
+    .box > p{
+        font-size:16px;
+    }
+    .box-container {
+        margin:5em auto;
+        width:18em;
+        height:19em
+    }
+    
+
+    .box > svg{
+        margin:3em 4em -2.5em 5em 
+     }
+     .serve > h1{
+        font-size:25px;
+        letter-spacing:1px
+     }
+}
